@@ -1,104 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Web Dengan CSS</title>
-	<link rel="stylesheet" type="text/css" href="css/lagi 3.css">
+	<meta charset="UTF-8">
+	<title>Web Dengan Bootstrap</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <!--header-->
-	<div class="header">
+	<div class="nav navbar-default">
 		<div class="container">
-			<div class="logo">
-				<h1><a href="#">BugisDev</a></h1>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">BugisDev</a>
 			</div>
-				<ul class="menu">
-					<li><a href="">Blog</a></li>
-					<li><a href="">Home</a></li>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Blog</a></li>
 				</ul>
+			</div>
 		</div>
 	</div>
 <!--/-->
 <!--content-->
-	<div class="content">
+	<div class="jumbotron">
 		<div class="container">
-			<div class="about">
-				<h1>HALLO !</h1>
-				<h2>Saya ARI</h2> 
+			<h1>HALLO !</h1>
+			<h2>Saya ARI</h2>
 				<p>Selamat Datang Di WebsiteKu</p>
-				<h3>Tentang Saya</h3>
-				<img src="img/gambar 1.png" height="200" width="200">
+				<i class="fa fa-chevron-down fa-3x"></i>
+		</div>
+	</div>
+<!--/-->
+<!--about-->
+	<section class="about">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Tentang Saya</h2>
+				<img src="img/folio0.png" height="200" width="200">
 				<p>
 				Halo kawan. Saya <U>ARI</U>, umur saya 18 tahun, saya sekarang sudah tamat sekolah menengah kejuruaan, disebuah kabupaten di Sulawesi Selatan, saya sekarang adalah seorang pengagguran:). kali ini saya akan perlihatkan Sebuah tema bootstrap yang sangat sederhana, lucu & bersih.
 				Silakan ikuti jika anda ingin mengikutinya, Anda juga dapat gunakan tema ini dalam setiap proyek anda secara bebas, atau Berbagi dengan teman Anda.
 				</p>
 			</div>
-			<div class="galery">
-				<div class="container">
-					<h2>Portofolio Saya</h2>
-						<div class="row">
-							<div class="col-md-4">
-								<a href="#"><img src="img/folio01.png"></a>
-								<h3>Forget</h3>
-							</div>
-							<div class="col-md-4">
-								<a href="#"><img src="img/folio02.png"></a>
-								<h3>Hammburger</h3>
-							</div>
-							<div class="col-md-4">
-								<a href="#"><img src="img/folio03.png"></a>
-								<h3>Mc Queen</h3>
-							</div>
-							<div class="col-md-4">
-								<a href="#"><img src="img/folio04.png"></a>
-								<h3>Pacifict Coast</h3>
-							</div>
-							<div class="col-md-4">
-								<a href="#"><img src="img/folio05.png"></a>
-								<h3>Pompadowns</h3>
-							</div>
-							<div class="col-md-4">
-								<a href="#"><img src="img/folio06.png"></a>
-								<h3>Vintage</h3>
-							</div>
+		</div>
+		</div>
+	</section>
+<!--/-->
+<!--galery-->
+	<section class="galery">
+		<div class="container">
+			<h2>Portofolio Saya</h2>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="#"><img src="img/folio01.png"></a>
+						<h3>Forget</h3>
+					</div>
+					<div class="col-md-4">
+						<a href="#"><img src="img/folio02.png"></a>
+						<h3>Hammburger</h3>
+					</div>
+					<div class="col-md-4">
+						<a href="#"><img src="img/folio03.png"></a>
+						<h3>Mc Queen</h3>
+					</div>
+					<div class="col-md-4">
+						<a href="#"><img src="img/folio04.png"></a>
+						<h3>Pacifict Coast</h3>
+					</div>
+					<div class="col-md-4">
+						<a href="#"><img src="img/folio05.png"></a>
+						<h3>Pompadowns</h3>
+					</div>
+					<div class="col-md-4">
+						<a href="#"><img src="img/folio06.png"></a>
+						<h3>Vintage</h3>
+					</div>
+				</div>
+		</div>
+	</section>
+<!--/-->
+<!--contact-->
+	<section class="contact">
+		<h2>Kontak</h2>
+			<div class="container">
+			<hr>
+				<div class="col-md-6">
+					<form method="post" action>
+						<div class="input-group-lg">
+							<label for="name">
+								Nama Kamu
+								<i>*</i>
+							</label>
+							<input name="name" type="text" class="form-control" placeholder="bagimana saya memanggilmu?">
 						</div>
+						<div class="input-group-lg">
+							<label for="email">
+								Email Kamu
+								<i>*</i>
+							</label>
+							<input name="name" type="text" class="form-control" placeholder="Email Adderess">
+						</div>
+						<div class="input-group-lg">
+							<label for="message">
+								Pesan
+								<i>*</i>
+							</label>
+							<textarea name="message" class="form-control" placeholder="Masukkan Pesan"></textarea>
+						</div>
+						<div class="text-center btn_right">
+							<input name="submit" type="submit" value="Kirim Pesan" class="btn_regular">
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6">
+					<ul>
+						<li><i class="fa fa-map-marker"></i><p>Bulukumba</p> </li>
+						<li><i class="fa fa-phone"></i><p>(085)796098518</p></li>
+						<li><i class="fa fa-envelope-o"></i><p>ari.anime97@gmail.com</li>
+					</ul>
+					<hr>
+					<div class="social">
+						<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+						<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+						<a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+						<a href="#"><i class="fa fa-github fa-2x"></i></a>
+					</div>
 				</div>
 			</div>
-			<div class="contact">
-				<h2>Kontak</h2>
-					<form action="proses.html" method="get">
-						<table border="0" size="300px">
-							<tr>
-								<td>Nama Kamu</td>
-								<td>:</td>
-								<td><input type="text" name="nama_kamu"/></td>
-							</tr>
-							<tr>
-								<td>Email</td>
-								<td>:</td>
-								<td><textarea name="alamat" rows="2" cols="40"></textarea></td>
-							</tr>
-							<tr>
-								<td>Tanggal Lahir</td>
-								<td>:</td>
-								<td><input type="text" name="tanggal" size="25" maxlength="2"/>
-								</td>
-							</tr>
-							<tr>
-								<td>Komentar</td>
-								<td>:</td>
-								<td><textarea name="komentar" rows="10" cols="80"></textarea></td>
-							</tr>
-							<tr>
-								<td><input type="submit" name="mulai_proses" value="kirim pesan"/></td>
-							</tr>
-						</table>
-					</form>
-			</div>
-			<div class="footer">
-				<p>&copy;2015 ARI </p>
-			</div>
-		</div>
-	</div>
+	</section>
+<!--/-->
+<!--footer-->
+	<footer>
+		<p>&copy; 2015 Mukhrijul BugisDev</p>
+	</footer>
 <!--/-->
 </body>
-</html>
+</html>	
